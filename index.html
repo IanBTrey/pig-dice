@@ -28,4 +28,34 @@
              <label for="nomDeux">Player 2 Name:</label>
              <input type="text" class="form-control" id="player1" required class="nomDeux" placeholder="input name">
            </div>
-          
+           <div id="old">
+     <div class="console container">
+       <a href="index.html">  <button id ="newGame" class="btn-info btn">NEW GAME</button></a>
+         <div class = "row">
+           <div class="col-md-6">
+             
+             <h2>Player 1: <span id = "nomUno"><span></h2>
+               <button id="player1-roll" class="btn-success btn">Roll the dice</button>
+               <button id="player1-hold" class="btn-info btn">Hold</button>
+             <h2>Roll It: <span id="die_roll_Uno"></span></h2>
+             <p>Total Round Score: <span id="endRoundI"></span></p>
+             <p>Total Score: <span id="total_score_1"></span></p>
+           </div>
+
+         <div class="col-md-6">
+
+           <h2>Player 2: <span id = "nomDeux"><span></h2>
+             <button id="player2-roll" class="btn-success btn">Roll the dice</button>
+             <button id="player2-hold" class="btn-info btn">Hold</button>
+             <h2>Roll It: <span id="die_roll_Deux"></span></h2>
+             <p>Total Round Score: <span id="endRoundII"></span></p>
+             <p>Total Score: <span id="total_score_2"></span></p>
+             <script src="js/jquery-3.3.1.js"></script>
+             <script src="js/scripts.js"></script>
+
+         </div>
+         </div>
+       </div>
+       </div>
+   </body>
+ </html>
