@@ -6,3 +6,8 @@ $(document).ready(function() {
     $(".jumbotron").hide();
     $("#old").slideDown(2000);
     $("#old").show();
+
+  $("#nameOne").text(play1)
+  $("#nameTwo").text(play2)
+  })
+})
