@@ -1,3 +1,16 @@
 
 #old{
   display: none;
+}
+body{
+  background-color: black;
+}
+.jumbotron{
+  margin: auto;
+  background-color: green;
+}
+h1{
+  color: black;
+  font-style: italic;
+  font-size: 55px;
+}
