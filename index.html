@@ -1,61 +1,54 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8"
-  <title>treyDice</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<title>treyDice</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-  <div class="displaypageOne-container">
-  <div class="jumbotron">
-    <header>
-      <div id="new">
-
-
-
-            <img src="images/trey.jpg" width="200" height="300" alt="image of trey">
-            <h1>Marvel at this piece of techART!</h1>
-</header>
-
-<button id="startTheGame" type="submit" class="btn-info btn">BEGIN</button>
-  <form id="players">
-  <div class="form-group">
-             <label for="nomUno">Player 1 Name:</label>
-             <input type="text" class="form-control" id="player1" required class="nomUno" placeholder="input name">
-           </div>
-           <div class="form-group">
-             <label for="nomDeux">Player 2 Name:</label>
-             <input type="text" class="form-control" id="player1" required class="nomDeux" placeholder="input name">
-           </div>
-           <div id="old">
-     <div class="console container">
-       <a href="index.html">  <button id ="newGame" class="btn-info btn">NEW GAME</button></a>
-         <div class = "row">
-           <div class="col-md-6">
-             <img src="images/icon.png"width="200"height="200" alt="image of icon">
-             <h2>Player 1: <span id = "nomUno"><span></h2>
-               <button id="player1-roll" class="btn-success btn">Roll the dice</button>
-               <button id="player1-hold" class="btn-info btn">Hold</button>
-             <h2>Roll It: <span id="die_roll_Uno"></span></h2>
-             <p>Total Round Score: <span id="endRoundI"></span></p>
-             <p>Total Score: <span id="total_score_1"></span></p>
-           </div>
-
-         <div class="col-md-6">
-<img src="images/icon.png"width="200"height="200" alt="image of icon">
-           <h2>Player 2: <span id = "nomDeux"><span></h2>
-             <button id="player2-roll" class="btn-success btn">Roll the dice</button>
-             <button id="player2-hold" class="btn-info btn">Hold</button>
-             <h2>Roll It: <span id="die_roll_Deux"></span></h2>
-             <p>Total Round Score: <span id="endRoundII"></span></p>
-             <p>Total Score: <span id="total_score_2"></span></p>
-             <script src="js/jquery-3.3.1.js"></script>
-             <script src="js/scripts.js"></script>
-
-         </div>
-         </div>
-       </div>
-       </div>
-   </body>
- </html>
+	<div class="displaypageOne-container">
+		<div class="jumbotron">
+			<header>
+				<div id="new">
+					<img alt="image of trey" height="300" src="images/trey.jpg" width="200">
+					<h1>Marvel at this piece of techART!</h1>
+				</div>
+			</header><button class="btn-info btn" id="startTheGame" type="submit">BEGIN</button>
+			<form id="players" name="players">
+				<div class="form-group">
+					<label for="nomUno">Player 1 Name:</label> <input class="nomUno" id="player1" placeholder="input name" required="" type="text">
+				</div>
+				<div class="form-group">
+					<label for="nomDeux">Player 2 Name:</label> <input class="nomDeux" id="player1" placeholder="input name" required="" type="text">
+				</div>
+				<div id="old">
+					<div class="console container">
+						<a href="index.html"><button class="btn-info btn" id="newGame">NEW GAME</button></a>
+						<div class="row">
+							<div class="col-md-6">
+								<img alt="image of icon" height="200" src="images/icon.png" width="200">
+								<h2>Player 1: <span id="nomUno"><span></span></span></h2><span id="nomUno"><button class="btn-success btn" id="player1-roll"><span id="nomUno">Roll the dice</span> <button class="btn-info btn" id="player1-hold">Hold</button>
+								<h2>Roll It: <span id="die_roll_Uno"></span></h2>
+								<p>Total Round Score: <span id="endRoundI"></span></p>
+								<p>Total Score: <span id="total_score_1"></span></p></button></span>
+							</div>
+							<div class="col-md-6">
+								<img alt="image of icon" height="200" src="images/icon.png" width="200">
+								<h2>Player 2: <span id="nomDeux"><span></span></span></h2><span id="nomDeux"><button class="btn-success btn" id="player2-roll"><span id="nomDeux">Roll the dice</span> <button class="btn-info btn" id="player2-hold">Hold</button>
+								<h2>Roll It: <span id="die_roll_Deux"></span></h2>
+								<p>Total Round Score: <span id="endRoundII"></span></p>
+								<p>Total Score: <span id="total_score_2"></span></p>
+								<script src="js/jquery-3.3.1.js">
+								</script>
+								<script src="js/scripts.js">
+								</script></button></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
