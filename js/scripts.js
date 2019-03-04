@@ -27,7 +27,7 @@ function Player(turn){
   this.playerName;
 }
 
-player.prototype.holdButton = function(){
+Player.prototype.holdButton = function() {
   this.totalscore += this.roundscore;
   this.roundscore = 0;
   alert(this.playerName + ", Your Turn is Over,nice move playing safe, Your rival gets the go!");
@@ -101,3 +101,13 @@ $("button#player1-hold").click(function(event){
     $("#die_roll_Uno").empty();
     player1.getWinner();
   });
+
+  $("button#player2-hold").click(function(event){
+    player2.holdButton();
+    $("#total_score_2").text(player2.totalscore);
+    $("#endRoundII").empty();
+    $("#die_roll_Deux").empty();
+    player2.getWinner();
+  });
+
+})
