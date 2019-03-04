@@ -41,3 +41,9 @@ Player.prototype.rollDice = function(){
     this.roundscore += this.roll;
   }
 }
+
+Player.prototype.getWinner = function(){
+  if(this.totalscore >= 100){
+    alert(this.playerName + " Won this Round!BRAVOOOOOO!!!");
+  }
+}
