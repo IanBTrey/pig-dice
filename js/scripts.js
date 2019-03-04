@@ -11,3 +11,6 @@ $(document).ready(function() {
   $("#nameTwo").text(play2)
   })
 })
+
+var player1="";
+var player2="";
