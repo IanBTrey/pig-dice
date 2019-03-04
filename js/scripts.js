@@ -47,3 +47,18 @@ Player.prototype.getWinner = function(){
     alert(this.playerName + " Won this Round!BRAVOOOOOO!!!");
   }
 }
+
+$(document).ready(function(){
+  $("button#startTheGame").click(function(event){
+    player1 = new Player();
+    player2 = new Player();
+
+    var player1Name = $(".nomUno").val();
+    $("#nomUno").text(player1Name);
+
+    var player2Name = $(".nomDeux").val();
+    $("#nomDeux").text(player2Name);
+
+    player1.playerName = player1Name;
+    player2.playerName = player2Name;
+  });
