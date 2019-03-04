@@ -62,3 +62,8 @@ $(document).ready(function(){
     player1.playerName = player1Name;
     player2.playerName = player2Name;
   });
+
+  var refresh = function(){
+    $(".player1Name").val("");
+    $(".player2Name").val("");
+  }
