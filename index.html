@@ -15,16 +15,14 @@
 					<h1>Marvel at this piece of techART!</h1>
 				</div>
 			</header>
-			<form id="players">
-		<div class="form-group">
-			<label for="nomUno">Player 1 Name:</label> <input required class="nomUno" id="player1" placeholder="input name" type="text">
-		</div>
-		<div class="form-group">
-			<label for="nomDeux">Player 2 Name:</label> <input required class="nomDeux" id="player2" placeholder="input name" type="text">
-		</div>
-						<button id="startTheGame" type="submit" class="btn-info btn">PLAY</button>
-				</form>
-
+			<form id="players" name="players">
+				<div class="form-group">
+					<label for="nomUno">Player 1 Name:</label> <input class="nomUno" id="player1" placeholder="input name" required="" type="text">
+				</div>
+				<div class="form-group">
+					<label for="nomDeux">Player 2 Name:</label> <input class="nomDeux" id="player2" placeholder="input name" required="" type="text">
+				</div><button class="btn-info btn" id="startTheGame" type="submit">PLAY</button>
+			</form>
 		</div>
 		<div id="old">
 			<div class="console container">
@@ -32,14 +30,14 @@
 				<div class="row">
 					<div class="col-md-6">
 						<img alt="image of icon" height="200" src="images/icon.png" width="200">
-						<h2>Player 1: <span id="nomUno"><span></span></span></h2><span id="nomUno"><button class="btn-success btn" id="player1-roll"><span id="nomUno"><span id="nomUno">Roll the dice</span> <button class="btn-info btn" id="player1-hold">Hold</button></span>
+						<h2>Player 1: <span id="nomUno"><span></span></span></h2><span id="nomUno"><button class="btn-success btn" id="player1-roll"><span id="nomUno"><span id="nomUno"><span id="nomUno">Roll the dice</span> <button class="btn-info btn" id="player1-hold">Hold</button></span></span>
 						<h2>Roll It: <span id="die_roll_Uno"></span></h2>
 						<p>Total Round Score: <span id="endRoundI"></span></p>
 						<p>Total Score: <span id="total_score_1"></span></p></button></span>
 					</div>
 					<div class="col-md-6">
 						<img alt="image of icon" height="200" src="images/icon.png" width="200">
-						<h2>Player 2: <span id="nomDeux"><span></span></span></h2><span id="nomDeux"><button class="btn-success btn" id="player2-roll"><span id="nomDeux"><span id="nomDeux">Roll the dice</span> <button class="btn-info btn" id="player2-hold">Hold</button></span>
+						<h2>Player 2: <span id="nomDeux"><span></span></span></h2><span id="nomDeux"><button class="btn-success btn" id="player2-roll"><span id="nomDeux"><span id="nomDeux"><span id="nomDeux">Roll the dice</span> <button class="btn-info btn" id="player2-hold">Hold</button></span></span>
 						<h2>Roll It: <span id="die_roll_Deux"></span></h2>
 						<p>Total Round Score: <span id="endRoundII"></span></p>
 						<p>Total Score: <span id="total_score_2"></span></p>
