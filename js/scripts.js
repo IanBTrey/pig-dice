@@ -93,3 +93,11 @@ $(document).ready(function(){
   player2.rollDice();
   $("#endRoundII").text(player2.roundscore);
 });
+
+$("button#player1-hold").click(function(event){
+    player1.holdButton();
+    $("#total_score_1").text(player1.totalscore);
+    $("#endRoundI").empty();
+    $("#die_roll_Uno").empty();
+    player1.getWinner();
+  });
