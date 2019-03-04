@@ -7,8 +7,8 @@ $(document).ready(function() {
     $("#old").slideDown(2000);
     $("#old").show();
 
-  $("#nameOne").text(play1)
-  $("#nameTwo").text(play2)
+  $("#nomUno").text(play1)
+  $("#nomDeux").text(play2)
   })
 })
 
@@ -25,4 +25,10 @@ function Player(turn){
   this.totalscore = 0;
   this.turn = turn;
   this.playerName;
+}
+
+player.prototype.holdButton = function(){
+  this.totalscore += this.roundscore;
+  this.roundscore = 0;
+  alert(this.playerName + ", Your Turn is Over,nice move playing safe, Your rival gets the go!");
 }
