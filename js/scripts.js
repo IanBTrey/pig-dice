@@ -86,3 +86,10 @@ $(document).ready(function(){
       player1.rollDice();
       $("#endRoundI").text(player1.roundscore);
     });
+
+  $("button#player2-roll").click(function(event){
+  player2.roll = throwdice();
+  $("#die_roll_Deux").text(player2.roll);
+  player2.rollDice();
+  $("#endRoundII").text(player2.roundscore);
+});
