@@ -32,3 +32,12 @@ player.prototype.holdButton = function(){
   this.roundscore = 0;
   alert(this.playerName + ", Your Turn is Over,nice move playing safe, Your rival gets the go!");
 }
+
+Player.prototype.rollDice = function(){
+  if(this.roll === 1){
+    this.roundscore = 0;
+    alert("Your Turn is Over " + this.playerName + ", you rolled a 1 therefore get nothing in this round!!" );
+  }else{
+    this.roundscore += this.roll;
+  }
+}
