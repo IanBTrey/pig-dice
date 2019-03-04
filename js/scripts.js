@@ -67,3 +67,15 @@ $(document).ready(function(){
     $(".player1Name").val("");
     $(".player2Name").val("");
   }
+
+  $("button#newGame").click(function(event){
+    refresh();
+    player1.newGame();
+    player2.newGame();
+    $("#endRoundI").empty();
+    $("#total_score_1").empty();
+    $("#die_roll_Uno").empty();
+    $("#endRoundII").empty();
+    $("#total_score_2").empty();
+    $("#die die_roll_Deux").empty();
+  });
