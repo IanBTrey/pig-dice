@@ -79,3 +79,10 @@ $(document).ready(function(){
     $("#total_score_2").empty();
     $("#die die_roll_Deux").empty();
   });
+
+  $("button#player1-roll").click(function(event){
+      player1.roll = throwdice();
+      $("#die_roll_Uno").text(player1.roll);
+      player1.rollDice();
+      $("#endRoundI").text(player1.roundscore);
+    });
